@@ -3,14 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Il mio CV</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #111827;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+            color: #d1d5db;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background-color: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        section h2 {
+            margin-bottom: 15px;
+            color: #111827;
+        }
+
+        .cv-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background-color: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .cv-button:hover {
+            background-color: #1d4ed8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 36px;
+            }
+
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>Il mio nome</h1>
+    <header>
+        <h1>Il mio nome</h1>
+        <p>La mia professione</p>
+    </header>
 
-    <p>Questa è la mia pagina personale.</p>
+    <main>
+
+        <section>
+            <h2>Chi sono</h2>
+            <p>
+                Scrivi qui una breve presentazione di te.
+            </p>
+        </section>
+
+        <section>
+            <h2>Competenze</h2>
+            <p>
+                Scrivi qui le tue competenze principali.
+            </p>
+        </section>
+
+        <section>
+            <h2>Esperienza</h2>
+            <p>
+                Scrivi qui le tue esperienze professionali.
+            </p>
+        </section>
+
+        <section>
+            <h2>Formazione</h2>
+            <p>
+                Scrivi qui il tuo percorso di studi.
+            </p>
+        </section>
+
+        <section>
+            <h2>Curriculum Vitae</h2>
+            <p>
+                Scarica il mio CV completo in formato PDF.
+            </p>
+
+            <a class="cv-button" href="ITCV2026.pdf" download>
+                Scarica il CV
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Il mio nome</p>
+    </footer>
 
 </body>
 </html>
+
