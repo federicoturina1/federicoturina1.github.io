@@ -28,20 +28,22 @@
 
         .page {
             width: 100%;
-            max-width: 1200px;
             min-height: 100vh;
 
             display: flex;
             align-items: center;
             justify-content: center;
 
-            padding: 70px 40px;
+            padding: 60px 30px;
         }
 
         .content {
             text-align: center;
-            max-width: 700px;
+            width: 100%;
+            max-width: 900px;
         }
+
+        /* FOTO */
 
         .photo {
             width: 210px;
@@ -53,49 +55,57 @@
             border: 1px solid #b49a6a;
             padding: 6px;
 
-            margin-bottom: 38px;
+            margin-bottom: 35px;
         }
 
-        .small-title {
-            font-size: 11px;
-            letter-spacing: 5px;
-            text-transform: uppercase;
-            color: #9a8157;
-
-            margin-bottom: 20px;
-        }
+        /* NOME */
 
         h1 {
             font-family: 'Cormorant Garamond', serif;
-            font-size: clamp(60px, 9vw, 100px);
-            font-weight: 500;
-            line-height: 0.9;
-            letter-spacing: -2px;
 
-            margin-bottom: 18px;
+            font-size: clamp(48px, 7vw, 76px);
+
+            font-weight: 500;
+            line-height: 1;
+
+            letter-spacing: -1px;
+
+            white-space: nowrap;
+
+            margin-bottom: 15px;
         }
+
+        /* PROFESSIONE */
 
         .role {
             font-family: 'Cormorant Garamond', serif;
+
             font-size: 27px;
             font-weight: 400;
 
             color: #6f665c;
 
-            margin-bottom: 38px;
+            margin-bottom: 35px;
         }
+
+        /* LINEA DECORATIVA */
 
         .line {
             width: 45px;
             height: 1px;
+
             background: #b49a6a;
 
-            margin: 0 auto 38px;
+            margin: 0 auto 35px;
         }
+
+        /* PULSANTI */
 
         .buttons {
             display: flex;
+
             justify-content: center;
+
             gap: 15px;
         }
 
@@ -108,10 +118,13 @@
 
             font-size: 11px;
             letter-spacing: 2px;
+
             text-transform: uppercase;
 
             transition: all 0.3s ease;
         }
+
+        /* DOWNLOAD CV */
 
         .cv {
             background: #26231f;
@@ -122,8 +135,11 @@
             background: #9a8157;
         }
 
+        /* LINKEDIN */
+
         .linkedin {
             border: 1px solid #9a8157;
+
             color: #26231f;
         }
 
@@ -132,19 +148,25 @@
             color: white;
         }
 
-        @media (max-width: 600px) {
+        /* TELEFONO */
+
+        @media (max-width: 700px) {
 
             .page {
-                padding: 50px 20px;
+                padding: 40px 20px;
             }
 
             .photo {
                 width: 170px;
                 height: 170px;
+
+                margin-bottom: 30px;
             }
 
             h1 {
-                font-size: 60px;
+                font-size: 48px;
+
+                white-space: normal;
             }
 
             .role {
@@ -153,6 +175,7 @@
 
             .buttons {
                 flex-direction: column;
+
                 align-items: center;
             }
 
@@ -169,25 +192,31 @@
 
         <div class="content">
 
+            <!-- FOTO -->
+
             <img
                 src="foto.JPEG"
                 alt="Federico Turina"
                 class="photo"
             >
 
-            <p class="small-title">
-                Hospitality Professional
-            </p>
+            <!-- NOME -->
 
             <h1>
-                Federico<br>Turina
+                Federico Turina
             </h1>
+
+            <!-- PROFESSIONE -->
 
             <p class="role">
                 Assistant Bar Manager
             </p>
 
+            <!-- LINEA -->
+
             <div class="line"></div>
+
+            <!-- PULSANTI -->
 
             <div class="buttons">
 
@@ -200,8 +229,9 @@
                 </a>
 
                 <a
-                    href="INSERISCI-LINK-LINKEDIN"
+                    href="INSERISCI-QUI-IL-TUO-LINKEDIN"
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="button linkedin"
                 >
                     LinkedIn
