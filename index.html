@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Federico Turina</title>
+    <title>Federico Turina | Assistant Bar Manager</title>
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap');
+
         * {
             margin: 0;
             padding: 0;
@@ -15,102 +17,147 @@
 
         body {
             min-height: 100vh;
+            background: #eee9df;
+            color: #26231f;
+            font-family: 'Montserrat', sans-serif;
+
             display: flex;
-            justify-content: center;
             align-items: center;
-
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                         Roboto, Helvetica, Arial, sans-serif;
-
-            background: #ffffff;
-            color: #171717;
+            justify-content: center;
         }
 
-        .container {
+        .page {
+            width: 100%;
+            max-width: 1200px;
+            min-height: 100vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 70px 40px;
+        }
+
+        .content {
             text-align: center;
-            padding: 40px 20px;
+            max-width: 700px;
         }
 
-        .profile-photo {
-            width: 180px;
-            height: 180px;
-
-            object-fit: cover;
+        .photo {
+            width: 210px;
+            height: 210px;
 
             border-radius: 50%;
+            object-fit: cover;
 
-            border: 1px solid #e5e5e5;
+            border: 1px solid #b49a6a;
+            padding: 6px;
 
-            margin-bottom: 30px;
+            margin-bottom: 38px;
+        }
+
+        .small-title {
+            font-size: 11px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            color: #9a8157;
+
+            margin-bottom: 20px;
         }
 
         h1 {
-            font-size: 42px;
-            font-weight: 600;
-            letter-spacing: -1.5px;
-            margin-bottom: 8px;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(60px, 9vw, 100px);
+            font-weight: 500;
+            line-height: 0.9;
+            letter-spacing: -2px;
+
+            margin-bottom: 18px;
         }
 
         .role {
-            font-size: 19px;
-            color: #777;
-            margin-bottom: 32px;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 27px;
+            font-weight: 400;
+
+            color: #6f665c;
+
+            margin-bottom: 38px;
+        }
+
+        .line {
+            width: 45px;
+            height: 1px;
+            background: #b49a6a;
+
+            margin: 0 auto 38px;
         }
 
         .buttons {
             display: flex;
             justify-content: center;
-            gap: 12px;
+            gap: 15px;
         }
 
         .button {
-            display: inline-block;
+            min-width: 150px;
 
-            padding: 12px 24px;
-
-            border-radius: 6px;
+            padding: 14px 25px;
 
             text-decoration: none;
 
-            font-size: 14px;
-            font-weight: 600;
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
 
-            transition: all 0.2s ease;
+            transition: all 0.3s ease;
         }
 
-        .download {
-            background: #171717;
-            color: white;
+        .cv {
+            background: #26231f;
+            color: #eee9df;
         }
 
-        .download:hover {
-            background: #333;
-            transform: translateY(-2px);
+        .cv:hover {
+            background: #9a8157;
         }
 
         .linkedin {
-            border: 1px solid #d6d6d6;
-            color: #171717;
+            border: 1px solid #9a8157;
+            color: #26231f;
         }
 
         .linkedin:hover {
-            border-color: #999;
-            transform: translateY(-2px);
+            background: #9a8157;
+            color: white;
         }
 
         @media (max-width: 600px) {
 
-            .profile-photo {
-                width: 150px;
-                height: 150px;
+            .page {
+                padding: 50px 20px;
+            }
+
+            .photo {
+                width: 170px;
+                height: 170px;
             }
 
             h1 {
-                font-size: 34px;
+                font-size: 60px;
             }
 
             .role {
-                font-size: 17px;
+                font-size: 23px;
+            }
+
+            .buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .button {
+                width: 190px;
             }
         }
     </style>
@@ -118,37 +165,49 @@
 
 <body>
 
-    <main class="container">
+    <main class="page">
 
-        <img
-            src="foto.jpg"
-            alt="Federico Turina"
-            class="profile-photo"
-        >
+        <div class="content">
 
-        <h1>Federico Turina</h1>
-
-        <p class="role">
-            Assistant Bar Manager
-        </p>
-
-        <div class="buttons">
-
-            <a
-                href="ITCV2026.pdf"
-                download
-                class="button download"
+            <img
+                src="foto.jpg"
+                alt="Federico Turina"
+                class="photo"
             >
-                Download CV
-            </a>
 
-            <a
-                href="INSERISCI-QUI-LINKEDIN"
-                target="_blank"
-                class="button linkedin"
-            >
-                LinkedIn
-            </a>
+            <p class="small-title">
+                Hospitality Professional
+            </p>
+
+            <h1>
+                Federico<br>Turina
+            </h1>
+
+            <p class="role">
+                Assistant Bar Manager
+            </p>
+
+            <div class="line"></div>
+
+            <div class="buttons">
+
+                <a
+                    href="ITCV2026.pdf"
+                    download
+                    class="button cv"
+                >
+                    Download CV
+                </a>
+
+                <a
+                    href="INSERISCI-LINK-LINKEDIN"
+                    target="_blank"
+                    class="button linkedin"
+                >
+                    LinkedIn
+                </a>
+
+            </div>
 
         </div>
 
