@@ -4,86 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Il mio CV</title>
+    <title>Federico Turina</title>
 
     <style>
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            color: #222;
-            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                         Roboto, Helvetica, Arial, sans-serif;
+
+            background: #ffffff;
+            color: #171717;
         }
 
-        header {
-            background-color: #111827;
-            color: white;
+        .container {
             text-align: center;
-            padding: 80px 20px;
+            padding: 40px 20px;
         }
 
-        header h1 {
-            font-size: 48px;
-            margin-bottom: 10px;
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+
+            object-fit: cover;
+
+            border-radius: 50%;
+
+            border: 1px solid #e5e5e5;
+
+            margin-bottom: 30px;
         }
 
-        header p {
-            font-size: 20px;
-            color: #d1d5db;
+        h1 {
+            font-size: 42px;
+            font-weight: 600;
+            letter-spacing: -1.5px;
+            margin-bottom: 8px;
         }
 
-        main {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
+        .role {
+            font-size: 19px;
+            color: #777;
+            margin-bottom: 32px;
         }
 
-        section {
-            background-color: white;
-            padding: 30px;
-            margin-bottom: 25px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
         }
 
-        section h2 {
-            margin-bottom: 15px;
-            color: #111827;
-        }
-
-        .cv-button {
+        .button {
             display: inline-block;
-            margin-top: 20px;
+
             padding: 12px 24px;
-            background-color: #2563eb;
-            color: white;
+
+            border-radius: 6px;
+
             text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
+
+            font-size: 14px;
+            font-weight: 600;
+
+            transition: all 0.2s ease;
         }
 
-        .cv-button:hover {
-            background-color: #1d4ed8;
+        .download {
+            background: #171717;
+            color: white;
         }
 
-        footer {
-            text-align: center;
-            padding: 30px;
-            color: #666;
+        .download:hover {
+            background: #333;
+            transform: translateY(-2px);
+        }
+
+        .linkedin {
+            border: 1px solid #d6d6d6;
+            color: #171717;
+        }
+
+        .linkedin:hover {
+            border-color: #999;
+            transform: translateY(-2px);
         }
 
         @media (max-width: 600px) {
-            header h1 {
-                font-size: 36px;
+
+            .profile-photo {
+                width: 150px;
+                height: 150px;
             }
 
-            section {
-                padding: 20px;
+            h1 {
+                font-size: 34px;
+            }
+
+            .role {
+                font-size: 17px;
             }
         }
     </style>
@@ -91,58 +118,41 @@
 
 <body>
 
-    <header>
-        <h1>Il mio nome</h1>
-        <p>La mia professione</p>
-    </header>
+    <main class="container">
 
-    <main>
+        <img
+            src="foto.jpg"
+            alt="Federico Turina"
+            class="profile-photo"
+        >
 
-        <section>
-            <h2>Chi sono</h2>
-            <p>
-                Scrivi qui una breve presentazione di te.
-            </p>
-        </section>
+        <h1>Federico Turina</h1>
 
-        <section>
-            <h2>Competenze</h2>
-            <p>
-                Scrivi qui le tue competenze principali.
-            </p>
-        </section>
+        <p class="role">
+            Assistant Bar Manager
+        </p>
 
-        <section>
-            <h2>Esperienza</h2>
-            <p>
-                Scrivi qui le tue esperienze professionali.
-            </p>
-        </section>
+        <div class="buttons">
 
-        <section>
-            <h2>Formazione</h2>
-            <p>
-                Scrivi qui il tuo percorso di studi.
-            </p>
-        </section>
-
-        <section>
-            <h2>Curriculum Vitae</h2>
-            <p>
-                Scarica il mio CV completo in formato PDF.
-            </p>
-
-            <a class="cv-button" href="ITCV2026.pdf" download>
-                Scarica il CV
+            <a
+                href="ITCV2026.pdf"
+                download
+                class="button download"
+            >
+                Download CV
             </a>
-        </section>
+
+            <a
+                href="INSERISCI-QUI-LINKEDIN"
+                target="_blank"
+                class="button linkedin"
+            >
+                LinkedIn
+            </a>
+
+        </div>
 
     </main>
 
-    <footer>
-        <p>© 2026 Il mio nome</p>
-    </footer>
-
 </body>
 </html>
-
