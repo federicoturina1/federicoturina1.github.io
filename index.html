@@ -10,32 +10,22 @@
 
         @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap');
 
-
-        /* RESET */
-
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-
-        /* PAGINA */
-
         body {
             min-height: 100vh;
-
             background: #eee9df;
-
             color: #26231f;
-
             font-family: 'Montserrat', sans-serif;
 
             display: flex;
             align-items: center;
             justify-content: center;
         }
-
 
         .page {
             width: 100%;
@@ -48,14 +38,11 @@
             padding: 60px 30px;
         }
 
-
         .content {
             width: 100%;
             max-width: 900px;
-
             text-align: center;
         }
-
 
         /* FOTO */
 
@@ -64,16 +51,13 @@
             height: 210px;
 
             border-radius: 50%;
-
             object-fit: cover;
 
             border: 1px solid #b49a6a;
-
             padding: 6px;
 
             margin-bottom: 30px;
         }
-
 
         /* NOME */
 
@@ -83,9 +67,7 @@
             font-size: clamp(46px, 6vw, 68px);
 
             font-weight: 500;
-
             line-height: 1;
-
             letter-spacing: -1px;
 
             white-space: nowrap;
@@ -93,14 +75,12 @@
             margin-bottom: 12px;
         }
 
-
-        /* PROFESSIONE */
+        /* RUOLO */
 
         .role {
             font-family: 'Cormorant Garamond', serif;
 
             font-size: 26px;
-
             font-weight: 400;
 
             color: #6f665c;
@@ -108,12 +88,10 @@
             margin-bottom: 30px;
         }
 
-
-        /* LINEA DECORATIVA */
+        /* LINEA */
 
         .line {
             width: 45px;
-
             height: 1px;
 
             background: #b49a6a;
@@ -121,29 +99,21 @@
             margin: 0 auto 30px;
         }
 
-
-        /* CONTENITORE PULSANTI */
-
-        .buttons {
-            display: flex;
-
-            justify-content: center;
-
-            gap: 15px;
-        }
-
-
-        /* PULSANTI */
+        /* PULSANTE */
 
         .button {
-            min-width: 150px;
+            display: inline-block;
+
+            min-width: 170px;
 
             padding: 14px 25px;
+
+            background: #26231f;
+            color: #eee9df;
 
             text-decoration: none;
 
             font-size: 11px;
-
             letter-spacing: 2px;
 
             text-transform: uppercase;
@@ -151,38 +121,9 @@
             transition: all 0.3s ease;
         }
 
-
-        /* DOWNLOAD CV */
-
-        .cv {
-            background: #26231f;
-
-            color: #eee9df;
-        }
-
-
-        .cv:hover {
+        .button:hover {
             background: #9a8157;
         }
-
-
-        /* LINKEDIN */
-
-        .linkedin {
-            border: 1px solid #9a8157;
-
-            color: #26231f;
-
-            background: transparent;
-        }
-
-
-        .linkedin:hover {
-            background: #9a8157;
-
-            color: white;
-        }
-
 
         /* SMARTPHONE */
 
@@ -192,57 +133,35 @@
                 padding: 40px 20px;
             }
 
-
             .photo {
                 width: 170px;
                 height: 170px;
-
                 margin-bottom: 25px;
             }
 
-
             h1 {
                 font-size: 46px;
-
                 white-space: nowrap;
             }
-
 
             .role {
                 font-size: 23px;
             }
 
-
-            .buttons {
-                flex-direction: column;
-
-                align-items: center;
-
-                gap: 10px;
-            }
-
-
             .button {
                 width: 190px;
             }
-
         }
 
     </style>
 
 </head>
 
-
 <body>
-
 
     <main class="page">
 
-
         <div class="content">
-
-
-            <!-- FOTO -->
 
             <img
                 src="foto.JPEG"
@@ -250,63 +169,27 @@
                 class="photo"
             >
 
-
-            <!-- NOME -->
-
             <h1>
                 Federico Turina
             </h1>
-
-
-            <!-- PROFESSIONE -->
 
             <p class="role">
                 Assistant Bar Manager
             </p>
 
-
-            <!-- LINEA -->
-
             <div class="line"></div>
 
-
-            <!-- PULSANTI -->
-
-            <div class="buttons">
-
-
-                <!-- DOWNLOAD CV -->
-
-                <a
-                    href="ITCV2026.pdf"
-                    download
-                    class="button cv"
-                >
-                    Download CV
-                </a>
-
-
-                <!-- LINKEDIN -->
-
-                <a
-                    href="https://www.linkedin.com/in/federico-turina-174465bb/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="button linkedin"
-                >
-                    LinkedIn
-                </a>
-
-
-            </div>
-
+            <a
+                href="ITCV2026.pdf"
+                download
+                class="button"
+            >
+                Download CV
+            </a>
 
         </div>
 
-
     </main>
 
-
 </body>
-
 </html>
